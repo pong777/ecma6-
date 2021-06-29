@@ -15,4 +15,3 @@ https://poiemaweb.com/<br>
 1주차 <br>
   - let, const와 블록 레벨 스코프
   - 템플릿 리터럴
---
