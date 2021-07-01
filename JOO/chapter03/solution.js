@@ -48,6 +48,7 @@ console.log(pow2); // [ 1, 4, 9 ]
 //3. this
 //3.1 일반 함수의 this
 
+/*
 function Prefixer(prefix) {
     this.prefix = prefix;
   }
@@ -61,4 +62,81 @@ function Prefixer(prefix) {
   
   var pre = new Prefixer('Hi');
   console.log(pre.prefixArray(['Lee', 'Kim']));
-  //아 머리아퍼
+*/
+
+
+//3.2 화살표 함수의 this
+/*
+  function Prefixer(prefix) {
+    this.prefix = prefix;
+  }
+  
+  Prefixer.prototype.prefixArray = function (arr) {
+    // this는 상위 스코프인 prefixArray 메소드 내의 this를 가리킨다.
+    return arr.map(x => `${this.prefix}  ${x}`);
+  };
+  
+  const pre = new Prefixer('Hi');
+  console.log(pre.prefixArray(['Lee', 'Kim']));
+*/
+
+//4. 화살표 함수를 사용해서는 안되는 경우
+//4.1 메소드
+
+
+/*
+// Bad
+
+const person = {
+    name: 'Lee',
+    sayHi: () => console.log(`Hi ${this.name}`)
+  };
+  
+  person.sayHi(); // Hi undefined
+*/
+
+
+/*
+  // Good
+  const person = {
+    name: 'Lee',
+    sayHi() { // === sayHi: function() {
+      console.log(`Hi ${this.name}`);
+    }
+  };
+  
+  person.sayHi(); // Hi Lee
+*/
+
+  // 4.2 prototype
+  /*
+  // Good
+    const person = {
+        name: 'Lee',
+    };
+    
+    Object.prototype.sayHi = function() {
+        console.log(`Hi ${this.name}`);
+    };
+    
+    person.sayHi(); // Hi Lee
+*/
+//4.3 생성자 함수
+/*
+const Foo = () => {};
+
+// 화살표 함수는 prototype 프로퍼티가 없다
+console.log(Foo.hasOwnProperty('prototype')); // false
+
+const foo = new Foo(); // TypeError: Foo is not a constructor
+*/
+
+//4.4 addEventListener 함수의 콜백 함수
+/*
+var button = document.getElementById('myButton');
+
+button.addEventListener('click', function() {
+  console.log(this === button); // => true
+  this.innerHTML = 'Clicked button';
+});
+*/
