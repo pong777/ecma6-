@@ -15,3 +15,7 @@ https://poiemaweb.com/<br>
 1주차 <br>
   - let, const와 블록 레벨 스코프
   - 템플릿 리터럴
+--
+2주차 <br>
+  - 화살표 함수
+  - 매개변수 기본값, Rest 파라미터, Spread 문법, Rest/Spread 프로퍼티
