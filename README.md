@@ -19,3 +19,7 @@ https://poiemaweb.com/<br>
 2주차 <br>
   - 화살표 함수
   - 매개변수 기본값, Rest 파라미터, Spread 문법, Rest/Spread 프로퍼티
+--
+3주차 <br>
+  - 객체 리터럴 프로퍼티 기능확장
+  - 디스트럭처링
