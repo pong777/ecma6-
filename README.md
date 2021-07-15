@@ -23,3 +23,6 @@ https://poiemaweb.com/<br>
 3주차 <br>
   - 객체 리터럴 프로퍼티 기능확장
   - 디스트럭처링
+  - CodeTest_001 : https://programmers.co.kr/learn/courses/30/lessons/12906
+  - CodeTest_002 : https://programmers.co.kr/learn/courses/30/lessons/12903
+  - CodeTest_003 : https://programmers.co.kr/learn/courses/30/lessons/12901
