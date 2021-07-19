@@ -26,3 +26,9 @@ https://poiemaweb.com/<br>
   - CodeTest_001 : https://programmers.co.kr/learn/courses/30/lessons/12906
   - CodeTest_002 : https://programmers.co.kr/learn/courses/30/lessons/12903
   - CodeTest_003 : https://programmers.co.kr/learn/courses/30/lessons/12901
+--
+4주차 <br>
+  - 이론은 알아서 
+  - CodeTest_004 : https://programmers.co.kr/learn/courses/30/lessons/1845
+  - CodeTest_005 : https://programmers.co.kr/learn/courses/30/lessons/42576
+  - CodeTest_006 : https://programmers.co.kr/learn/courses/30/lessons/76501
