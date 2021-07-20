@@ -4,7 +4,7 @@ function solution(participant, completion) {
     let answer = []
     for (var i = 0; i < participant.length; i++) {
         if (participant[i] != completion[i]) {
-            completion.splice(i,0,'blanck')
+            completion.splice(i,0,'blank')
             answer.push(participant[i])
         }
     }
