@@ -9,3 +9,5 @@ function solution(a, b) {
     
     return todayWeek;
 }
+
+console.log(solution(7, 20));

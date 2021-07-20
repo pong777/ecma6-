@@ -8,3 +8,5 @@ function solution(s) {
         return s.charAt(s.length/2);
     }
 }
+
+console.log(solution("kye"));
