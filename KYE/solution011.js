@@ -2,7 +2,7 @@ function solution(new_id) {
     let temp = new_id;
     let reg = /[\{\}\[\]\/(\s*)?,;:|\)*~`!^\+<>@\#$%&\\\=\(\'\"]/gi;
     let characters = temp.toLowerCase();
-    characters = characters.replace(reg,"").replace(/(.)\1+/gi, '$1');
+    characters = characters.replace(reg,"").replace(/\.+/g, '.');
 
     if (characters.charAt(0) === '.') {
         characters = characters.slice(1);
@@ -29,7 +29,7 @@ function solution(new_id) {
 
     return characters;
 }
-console.log(solution("b..-...--."));
+
 console.log(solution("...!@BaT#*..y.abcdefghijklm"));
 console.log(solution("z-+.^."));
 console.log(solution("=.="));
@@ -41,3 +41,4 @@ console.log(solution("  !@#2.$%&3.#..$%.&&*^(  "));
 console.log(solution("  1``][})\|/?.>,. "));
 console.log(solution(". .23456. 789012!3/ . "));
 console.log(solution("zsb"));
+console.log(solution("b..-...--."));
