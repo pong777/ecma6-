@@ -1,5 +1,4 @@
 function solution(num) {
-    let integer = 0;
     if (num % 2 === 0) return "Even";
     else return "Odd";
 }
