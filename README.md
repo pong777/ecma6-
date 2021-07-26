@@ -33,3 +33,12 @@ https://poiemaweb.com/<br>
   - CodeTest_004 : https://programmers.co.kr/learn/courses/30/lessons/1845
   - CodeTest_005 : https://programmers.co.kr/learn/courses/30/lessons/42576
   - CodeTest_006 : https://programmers.co.kr/learn/courses/30/lessons/76501
+
+5주차 <br>
+  - 이론은 알아서 
+  - CodeTest_007 : https://programmers.co.kr/learn/courses/30/lessons/12969
+  - CodeTest_008 : https://programmers.co.kr/learn/courses/30/lessons/12944
+  - CodeTest_009 : https://programmers.co.kr/learn/courses/30/lessons/12937
+  - CodeTest_010 : https://programmers.co.kr/learn/courses/30/lessons/12935
+  - CodeTest_011 : https://programmers.co.kr/learn/courses/30/lessons/72410
+
