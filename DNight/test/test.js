@@ -37,4 +37,4 @@ function solution(a, b) {
     return String(answer).slice(0,3).toUpperCase();
  }
 
- console.log(solution(5,24));
+ console.log(solution(5,24))
