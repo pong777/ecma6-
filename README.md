@@ -42,3 +42,8 @@ https://poiemaweb.com/<br>
   - CodeTest_010 : https://programmers.co.kr/learn/courses/30/lessons/12935
   - CodeTest_011 : https://programmers.co.kr/learn/courses/30/lessons/72410
 
+6주차 <br>
+  - CodeTest_012 : https://programmers.co.kr/learn/courses/30/lessons/17681
+  - CodeTest_013 : https://programmers.co.kr/learn/courses/30/lessons/77484
+  - CodeTest_014 : https://programmers.co.kr/learn/courses/30/lessons/42862
+
