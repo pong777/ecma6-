@@ -22,7 +22,6 @@ function solution(n, arr1, arr2) {
             tmp2[i] = "0"+tmp2[i]
         }
     }
-
     console.log(tmp2)
     for(let i = 0 ; i < len; i++){
         let val =""
@@ -33,8 +32,6 @@ function solution(n, arr1, arr2) {
         val = "";
     }
     console.log(answer)
-
-
     return answer;
 }
 
@@ -59,3 +56,67 @@ const stringAdd = (arr) => arr.reduce((acc, val) => acc + (val * 1), 0);
       ];
     }, []);
   }
+
+//로또
+
+
+
+
+//체육복
+function solution(n, lost, reserve) {
+    let answer = 0;   
+    lost.sort(function(a,b){
+       return a-b; 
+    });    
+    for(let i=0;i<lost.length;i++){
+        let index =reserve.indexOf(lost[i]);
+        if(index!==-1){ //경우가 있을떄..
+            delete reserve[index];
+            delete lost[i];
+        }
+    }
+    for(let i=0;i<lost.length;i++){
+        
+        if(lost[i]!==1&&reserve.indexOf(lost[i]-1)!==-1){ 
+            delete reserve[reserve.indexOf(lost[i]-1)];
+            delete lost[i];
+        }
+        else if(reserve.indexOf(lost[i]+1)!==-1){
+              delete reserve[reserve.indexOf(lost[i]+1)];
+              delete lost[i];
+        }
+    }
+    lost = lost.filter(function(element){
+        return lost!==false;
+    });
+    answer  = n-lost.length;
+    return answer;
+}
+
+
+//다른사람 풀이.
+function solution(n, lost, reserve) {      
+    return n - lost.filter(a => {
+        const b = reserve.find(r => Math.abs(r-a) <= 1)
+        if(!b) return true
+        reserve = reserve.filter(r => r !== b)
+    }).length
+}
+// 다른 풀이 2
+function solution(n, lost, reserve) {
+
+    const actualReserve = reserve.filter ( el => (lost.indexOf(el) === -1 ) );
+    const actualLost = lost.filter ( el => (reserve.indexOf(el) === -1 ) );
+
+    const set = Array.apply(undefined, new Array(n)).map( (el, i) => (actualLost.indexOf(i+1) === -1) ?  true : false );
+
+    for (let hero of actualReserve ) {
+        if (set[hero - 1 - 1] === false) {
+            set[hero - 1 - 1] = true;
+        } else if (set[hero - 1 + 1] === false) {
+            set[hero - 1 + 1] = true;
+        }
+    }
+    console.log(actualReserve, set, set.filter( el => el).length);
+    return set.filter( el => el).length
+}
