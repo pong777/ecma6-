@@ -58,3 +58,7 @@ https://poiemaweb.com/<br>
   - CodeTest_019 : https://programmers.co.kr/learn/courses/30/lessons/83201
   - CodeTest_020 : https://programmers.co.kr/learn/courses/30/lessons/84021
   - CodeTest_021 : https://programmers.co.kr/learn/courses/30/lessons/84325
+
+
+9주차 [20번문제 어려워서 위클리 이번주차 문제만 등록] <br>
+  - CodeTest_022 : https://programmers.co.kr/learn/courses/30/lessons/84512
