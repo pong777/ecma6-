@@ -56,7 +56,7 @@ https://poiemaweb.com/<br>
 8주차 <br>
   - CodeTest_018 : https://programmers.co.kr/learn/courses/30/lessons/82612
   - CodeTest_019 : https://programmers.co.kr/learn/courses/30/lessons/83201
-  - CodeTest_020 : https://programmers.co.kr/learn/courses/30/lessons/84021
+  - CodeTest_020 : https://programmers.co.kr/learn/courses/30/lessons/84021 [개어렵다..]
   - CodeTest_021 : https://programmers.co.kr/learn/courses/30/lessons/84325
 
 
