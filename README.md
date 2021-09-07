@@ -62,3 +62,9 @@ https://poiemaweb.com/<br>
 
 9주차 [20번문제 어려워서 위클리 이번주차 문제만 등록] <br>
   - CodeTest_022 : https://programmers.co.kr/learn/courses/30/lessons/84512
+
+
+10주차 <br>
+  - CodeTest_023 : https://programmers.co.kr/learn/courses/30/lessons/85002
+  - CodeTest_024 : https://programmers.co.kr/learn/courses/30/lessons/17682
+  - CodeTest_025 : https://programmers.co.kr/learn/courses/30/lessons/42888
