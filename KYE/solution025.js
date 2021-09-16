@@ -24,7 +24,7 @@ function solution(record) {
 
         if (obj[i].name == undefined) {
             for (let j = 0; j < obj.length; j++) {
-                if (obj[i].id == obj[j].id){
+                if (obj[i].id == obj[j].id) {
                     lostName = nameChange.get(obj[j].id);
                     break;
                 }
@@ -69,6 +69,33 @@ function solution(record) {
 
     return answer;
 }
+
+// 맵 활용
+// function solution(record) {
+//     let answer = [];
+//     let nameInfo = [];
+
+//     const stateMap = {
+//         Enter: '님이 들어왔습니다.',
+//         Leave: '님이 나갔습니다.'
+//     }
+
+//     for (let i in record) {
+//         const [state, id, name] = record[i].split(' ');
+
+//         if (state != "Change") {
+//             answer.push([state, id]);
+//         }
+
+//         if (name) {
+//             nameInfo[id] = name;
+//         }    
+//     }
+
+//     return answer.map(([state, userName]) => {
+//         return nameInfo[userName] + stateMap[state];
+//     })
+// }
 
 console.log(solution(["Enter uid1234 Muzi", 
                       "Enter uid4567 Prodo",
